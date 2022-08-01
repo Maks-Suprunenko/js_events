@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 4</title>
+  <script src="js/lab4lib.js" defer></script>
+  <script src="js/lab4.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <table>
+      <tr>
+        <th>Завдання</th>
+        <th>Виклик функції</th>
+        <th>Результат</th>
+      </tr>
+       
+        <tr>
+          <td><b>Завдання №1.</b> Виведення поточної дати та часу.</td>
+          <td>
+            <button type="button" onclick="outputCurrentDate()">Виконати</button>
+          </td>
+          <td><div id="curDate"></div></td>
+        </tr>
+        
+        <tr>
+          <td>
+            <p><b>Завдання №2.</b> Виведення дня тижня.</p>
+            <p>
+              <label for="date4week">Введіть дату: </label>
+              <input type="text" id="date4week">
+            </p>
+          </td>
+          <td>
+            <button type="button" onclick="outputDayOfWeek()">Виконати</button>
+          </td>
+          <td><div id="outputWeek"></div></td>
+        </tr>
+      
+        <tr>
+          <td>
+              <p><b>Завдання №3.</b>Пошук дати, яка була N днів назад.</p>
+              <p>
+                <label for="daysAgo">Введіть N: </label>
+              <input type="text" id="daysAgo">
+              </p>
+          </td>
+          <td>
+            <button type="button" onclick="searchDate()">Виконати</button>
+          </td>
+          <td><div id="dateNDaysAgo"></div></td>
+        </tr>
+
+        <tr>
+          <td>
+            <p><b>Завдання №4.</b>Останній день місяця</p>
+            <p>
+              <label for="year">Введіть рік: </label>
+            <input type="text" id="year">
+            </p>
+            <p>
+              <label for="month">Введіть місяць: </label>
+            <input type="text" id="month">
+            </p>
+          </td>
+          <td>
+            <button type="button" onclick="outputLastDayOfMonth()">Виконати</button>
+          </td>
+          <td><div id="lastDayOfMonth"></div></td>
+        </tr>
+        
+        <tr>
+          <td>
+            <p><b>Завдання №5.</b>Калькулятор секунд.</p>
+            </td>
+          <td>
+            <button type="button" onclick="outputSeconds()">Виконати</button>
+          </td>
+          <td><div id="seconds"></div></td>
+        </tr>
+        
+        <tr>
+          <td>
+            <p><b>Завдання №6.</b>Виведення дати.</p>
+            <p>
+              <label for="date2Format">Введіть дату: </label>
+              <input type="text" id="date2format">
+            </p>
+          </td>
+          <td>
+            <button type="button" id="sixthBtn" onclick="outputFormatedDate()">Виконати</button>
+          </td>
+          <td><div id="formatedDate"></div></td>
+        </tr>
+        
+        <tr>
+          <td>
+            <p><b>Завдання №7.</b>Різниця дат.</p>
+            <p>
+              <label for="firstDate">Введіть першу дату:</label>
+              <input type="text" id="firstDate">
+            </p>
+            <p>
+              <label for="secondDate">Введіть другу дату:</label>
+              <input type="text" id="secondDate">
+            </p>
+          </td>
+          <td>
+            <button type="button" onclick="subDate()">Виконати</button>
+          </td>
+          <td><div id="subOfDates"></div></td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>
+            <p><b>Завдання №8.</b>Форматування дати та часу.</p>
+            <p>
+              <label for="dateTime2Format">Введіть дату та час:</label>
+              <input type="text" id="dateTime2Format">
+            </p>
+          </td>
+          <td>
+            <button type="button" id="eighthBtn" onclick="outputFormatDateTime()">Виконати</button>
+          </td>
+          <td><div id="formatedDateTime"></div></td>
+        </tr>
+        
+        
+        
+        <tr> 
+          <td>
+            <p><b>Завдання №9.</b>Зчитування дати.</p>
+            <p>Можливі формати введення:</p>
+            <p>
+              <span>dd.mm.yyyy</span>,<span> mm.dd.yyyy</span>,<br>
+              <span> yyyy-mm-dd</span>,<span> dd mm yyyy</span>
+            </p>
+            <p>
+              <input type="checkbox" id="USAFormat">
+              <label for="USAFormat">USAFormat</label>
+            </p>
+            <p>
+              <label for="date2Parse">Введіть дату: </label>
+              <input type="text" id="date2Parse">
+            </p>
+          </td>
+          <td>
+            <button type="button" onclick="parseDate()">Виконати</button>
+          </td>
+          <td><div id="parsedDate"></div></td>
+        </tr>
+        
+        <tr>
+          <td>
+            <p><b>Завдання №10.</b>Виведення дати різними мовами.</p>
+            <p>
+              <input type="radio" id="ukLang" name="lang" value="uk" checked>
+              <label for="ukLang">Українська</label>
+            </p>
+            <p>
+              <input type="radio" id="ruLang" name="lang" value="ru">
+              <label for="ukLang">Русский</label>
+            </p>
+            <p>
+              <input type="radio" id="enLang" name="lang" value="en">
+              <label for="ukLang">English</label>
+            </p>
+          </td>
+          <td>
+            <button type="button" onclick="multiLangOutputDate()">Виконати</button>
+          </td>
+          <td><div id="multiLangDate"></div></td>
+        </tr>
+    </table>
+  </div>
+</body>
+</html>
